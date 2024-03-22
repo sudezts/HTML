@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>From Element</title>
+    </head>
+    <body>
+        <h2>Text input fields</h2>
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="Inan"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Kazanci">
+        </form>
+        <p>Note that the form itself is not visible.</p>
+        <p>Also note that the default width of text input fields is 20 characters.</p>
+
+        <hr>
+
+        <h2>Radio Buttons</h2>
+        <p>Choose your favorite Web language:</p>
+        <from>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </from>
+
+        <hr>
+
+        <h2>Checkboxes</h2>
+        <p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+        <from>
+            <input type="checkbox" id="v1" name="vehicle1" value="Bike">
+            <label for="v1">I have bike</label><br>
+            <input type="checkbox" id="v2" name="vehicle2" value="Car">
+            <label for="v2">I have a car</label><br>
+            <input type="checkbox" id="v3" name="vehicle3" value="Boat">
+            <label for="v3">I have a boat</label>
+        </from>
+
+        <hr>
+
+        <h2>Submit Button</h2>
+        <form action=https://csd.com/submit_info method="get">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="Inan"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Kazanci">
+            <input type="Submit" value="Submit">
+            <p>If you click the "Submit" button, the form-data will be sent to a page called "csd.com/submit_info".</p>
+        </form>
+
+        <hr>
+        <p><strong>input type="color"</strong></p>
+        <form action=https://csd.com/submit_info method="get">
+            <input type="color" id="favcolor" name="favcolor"
+            value="#ff0000">
+            <input type="submit" value="Submit">
+        </form>
+
+        <hr>
+        <p><strong>input type="date"</strong></p>
+        <from action=https://csd.com/submit_info method="get">
+            <label for="datemin">Enter a date after 2000-01-01:</label>
+            <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+            <label for="datemax">Enter a date before 1980-01-01:</label>
+            <input type="date" id="datemax" name="datemax" min="1979-12-31"><br><br>
+            <input type="submit" value="Submit">
+        </from>
+
+        <hr>
+        <p><strong>input type="month"</strong></p>
+        <from action=https://csd.com/submit_info method="get">
+            <label for="bdaymonth">Birthday (month and year):</label>
+            <input type="month" id="bdaymonth" name="bdaymonth"><br>
+            <input type="submit" value="Submit">
+        </from>
+
+        <hr>
+        <p><strong>input type="password"</strong></p>
+        <form action=https://csd.com/submit_info method="get">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd"><br><br>
+            <input type="Submit" value="Submit">
+        </form>
+
+        <hr>
+        <p><strong>input type="time"</strong></p>
+        <form action=https://csd.com/submit_info method="get">
+            <label for="appt">Select a time:</label>
+            <input type="time" id="appt" name="appt">
+            <input type="submit" value="Submit">
+        </form>
+
+        <hr>
+        <p><strong>input type="url"</strong></p>
+        <form action=https://csd.com/submit_info method="get">
+            <label for="homepage">Add your homepage:</label>
+            <input type="url" id="homepage" name="homepage">
+            <input type="submit" value="Submit">
+        </form>
+
+        <hr>
+        <p><strong>input type="email"</strong></p>
+        <form action=https://csd.com/submit_info method="get">
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email">
+            <input type="submit" value="Submit">
+        </form>
+
+        <hr>
+        <p><strong>input type="file"</strong></p>
+        <form action=https://csd.com/submit_info method="get">
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <hr>
+        <p><strong>input type="range"</strong></p>
+        <form action=https://csd.com/submit_info method="get">
+            <label for="vol">Volume (between 0 and 50):</label>
+            <input type="range" id="vol" name="vol" min="0" max="50">
+            <input type="submit" value="Submit">
+        </form>
+
+        <hr>
+
+        <h2>The select Element</h2>
+        <p>The select element defines a drop-down list:</p>
+        <form action=https://csd.com/submit_info method="get">
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi" selected>Audi</option>
+            </select>
+            <input type="submit">
+        </form>
+
+        <hr>
+
+        <h2>The select Element</h2>
+        <p>Use the multiple attribute to allow the user to select more than one value.</p>
+        <form action=https://csd.com/submit_info method="get">
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi" selected>Audi</option>
+            </select>
+            <input type="submit">
+        </form>
+
+        <hr>
+
+        <h2>Textarea</h2>
+        <p>The textarea element defines a multi-line input field.</p>
+        <form action=https://csd.com/submit_info method="get">
+            <textarea name="message" rows="10" cols="30" required>The cat was playing in the garden.</textarea>
+            <br><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
